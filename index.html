@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Timesheet</title>
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+<header>
+<h1>Timesheet for Graham</h1>
+</header>
+
+<main>
+<form id="timesheet-form">
+<!-- We'll create an input section for each day of the week -->
+<section class="day-entry">
+<label for="monday-start">Monday Start:</label>
+<input type="time" id="monday-start">
+
+<label for="monday-end">End:</label>
+<input type="time" id="monday-end">
+</section>
+
+<section class="day-entry">
+    <label for="tuesday-start">Tuesday Start:</label>
+    <input type="time" id="tuesday-start">
+    
+    <label for="tuesday-end">End:</label>
+    <input type="time" id="tuesday-end">
+    </section>
+
+    <section class="day-entry">
+        <label for="wednesday-start">Wednesday Start:</label>
+        <input type="time" id="wednesday-start">
+        
+        <label for="wednesday-end">End:</label>
+        <input type="time" id="wednesday-end">
+        </section>
+        
+        <section class="day-entry">
+            <label for="thursday-start">Thursday Start:</label>
+            <input type="time" id="thursday-start">
+            
+            <label for="thursday-end">End:</label>
+            <input type="time" id="thursday-end">
+            </section>
+
+            <section class="day-entry">
+                <label for="friday-start">Friday Start:</label>
+                <input type="time" id="friday-start">
+                
+                <label for="friday-end">End:</label>
+                <input type="time" id="friday-end">
+            </section>
+
+            <section class="day-entry">
+                <label for="saturday-start">Satuday Start:</label>
+                <input type="time" id="saturday-start">
+                
+                <label for="saturday-end">End:</label>
+                <input type="time" id="saturday-end">
+                </section>
+    
+                <section class="day-entry">
+                    <label for="sunday-start">Sunday Start:</label>
+                    <input type="time" id="sunday-start">
+                    
+                    <label for="sunday-end">End:</label>
+                    <input type="time" id="sunday-end">
+                </section>
+<!-- Repeat the above section for each day of the week -->
+
+<!-- Other days... -->
+
+<button type="button" id="calculate-btn">Calculate</button>
+</form>
+
+<section id="results">
+<p>Total Hours: <span id="total-hours">0</span></p>
+<p>Total Pay: $<span id="total-pay">0</span> AUD</p>
+<button type="button" id="send-btn">Send to Employer</button>
+</section>
+</main>
+
+<script src="script.js"></script>
+</body>
